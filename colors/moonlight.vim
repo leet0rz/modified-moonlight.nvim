@@ -20,7 +20,4 @@ package.loaded['moonlight.functions'] = nil
 package.loaded['moonlight.after'] = nil
 
 require('moonlight').set()
-
--- AFTER:
-require('moonlight.after')
 EOF
