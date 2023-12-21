@@ -22,11 +22,12 @@ package.loaded['moonlight.functions'] = nil
 require('moonlight').set()
 EOF
 
-" other fixes:
-" Statuslien fixes
-hi StatusLine guibg=NONE
-hi StatusLineNC guibg=NONE
 
-" neovim nightly hl fixes:
-highlight @variable.lua guifg=#38d5d5
-highlight Identifier guifg=#2aa2a2
+lua << EOF
+-- vim.cmd("highlight @variable.lua guifg=#38d5d5")
+-- vim.cmd('highlight Identifier guifg=#38d5d5')
+
+-- vim.cmd('highlight @variable.lua guifg=#38d5d5')
+vim.cmd('highlight @variable guifg=#38d5d5')
+vim.cmd('highlight Identifier guifg=#2aa2a2')
+EOF
