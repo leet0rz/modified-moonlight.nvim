@@ -120,7 +120,7 @@ theme.loadEditor = function ()
         PmenuThumb =            { fg = moonlight.fg, bg = moonlight.accent },
         Question =                { fg = moonlight.green },
         QuickFixLine =            { fg = moonlight.highlight, bg = moonlight.dark_blue, style = 'reverse' },
-        qfLineNr =                { fg = moonlight.highlight, bg = moonlight.white, style = 'reverse' },
+        qfLineNr =                { fg = moonlight.highlight, bg = moonlight.dark_blue, style = 'reverse' },
         Search =                { fg = moonlight.highlight, bg = moonlight.dark_blue, style = 'reverse' },
         SpecialKey =            { fg = moonlight.purple },
         SpellBad =                { fg = moonlight.red, bg = moonlight.none, style = 'none,undercurl' },
@@ -439,7 +439,6 @@ theme.loadPlugins = function()
         -- Indent Blankline
         IndentBlanklineChar =                   { fg = moonlight.highlight },
         IndentBlanklineContextChar =            { fg = moonlight.disabled },
-    
      -- Nvim dap
          DapBreakpoint =                         { fg = moonlight.red },
          DapStopped =                            { fg = moonlight.green },
@@ -448,7 +447,7 @@ theme.loadPlugins = function()
 
     -- Options:
 
-    vim.cmd('hi Normal guibg=#101317')
+    vim.cmd('hi Normal guibg=#000000')
     vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
 
     -- Disable nvim-tree background
