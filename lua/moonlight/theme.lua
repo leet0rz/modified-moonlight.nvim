@@ -169,8 +169,8 @@ theme.loadEditor = function ()
         editor.Normal =                { fg = moonlight.fg, bg = moonlight.none } -- normal text and background color
         editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.none }
     else
-        editor.Normal =                { fg = moonlight.fg, bg = moonlight.bg } -- normal text and background color
-        editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.bg }
+        editor.Normal =                { fg = moonlight.fg, bg = moonlight.none } -- normal text and background color
+        editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.none }
     end
 
     -- Remove window split borders
@@ -430,7 +430,7 @@ theme.loadPlugins = function()
 
         -- BufferLine
         BufferLineIndicatorSelected =           { fg = moonlight.accent },
-        BufferLineFill =                        { bg = moonlight.bg_alt },
+        BufferLineFill =                        { bg = moonlight.none },
 
         -- Sneak
         Sneak =                                 { fg = moonlight.bg, bg = moonlight.accent },
@@ -446,8 +446,6 @@ theme.loadPlugins = function()
     }
 
     -- Options:
-
-    vim.cmd('hi Normal guibg=#000000')
     vim.api.nvim_set_hl(0, "FloatBorder", { bg = "none" })
 
     -- Disable nvim-tree background
