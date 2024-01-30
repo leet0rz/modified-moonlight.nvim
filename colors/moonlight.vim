@@ -30,5 +30,4 @@ vim.cmd('highlight Identifier guifg=#2aa2a2')
 -- print, require, numbers etc.
 vim.cmd('highlight Special guifg=' .. variable_number_fg)
 vim.cmd('highlight Number guifg=' .. variable_number_fg)
-vim.cmd("highlight WinBar guibg=NONE ctermbg=NONE")
 EOF

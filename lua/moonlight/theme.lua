@@ -169,8 +169,8 @@ theme.loadEditor = function ()
         editor.Normal =                { fg = moonlight.fg, bg = moonlight.none } -- normal text and background color
         editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.none }
     else
-        editor.Normal =                { fg = moonlight.fg, bg = moonlight.none } -- normal text and background color
-        editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.none }
+        editor.Normal =                { fg = moonlight.fg, bg = moonlight.black } -- normal text and background color
+        editor.SignColumn =            { fg = moonlight.fg, bg = moonlight.black }
     end
 
     -- Remove window split borders
